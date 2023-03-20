@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://beust.com/testng/testng-1.0.dtd" >
+<suite name="test-parameter">
+
+    <test name="example1">
+
+        <groups>
+            <run>
+                <include name="A" />
+            </run>
+        </groups>
+
+        <classes>
+            <class
+                    name="solvd.contextDataProvider.ParameterByITestContextInDataProvider" />
+        </classes>
+
+    </test>
+
+
+    <test name="example2">
+
+        <groups>
+            <run>
+                <include name="B" />
+            </run>
+        </groups>
+
+        <classes>
+            <class
+                    name="solvd.contextDataProvider.ParameterByITestContextInDataProvider" />
+        </classes>
+
+    </test>
+
+</suite>
